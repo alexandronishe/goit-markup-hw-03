@@ -49,12 +49,26 @@ ul {
 
 /* HEADER */
 .section-header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .container.header {
   display: flex;
   align-items: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Logo */
@@ -135,6 +149,7 @@ ul {
   background-color: var(--footer-bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero {
@@ -155,13 +170,14 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white--text-color);
   background-color: var(--accent-text-color);
-  margin: 0 auto;
+  min-width: 200px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 /* Benefits */
@@ -258,6 +274,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 
 .position {
@@ -334,6 +351,7 @@ ul {
   cursor: pointer;
   color: var(--secondary-text-color);
   background-color: var(--secondary-bg-color);
+  padding: 6px 22px;
 }
 
 .filter-button:hover,
@@ -387,4 +405,5 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+  margin-bottom: 4px;
 }
