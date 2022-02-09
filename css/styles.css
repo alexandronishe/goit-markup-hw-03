@@ -13,6 +13,7 @@
   --primaty-text-color: #757575;
   --secondary-text-color: #212121;
   --white--text-color: #ffffff;
+  --white-bg-color: #fff;
   --accent-text-color: #2196f3;
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
@@ -50,7 +51,6 @@ ul {
 .section-header {
   border: 1px solid #ececec;
 }
-border: 1px solid #eeeeee;
 
 .container.header {
   display: flex;
@@ -170,6 +170,18 @@ border: 1px solid #eeeeee;
   padding-top: 94px;
 }
 
+.list-benefits {
+  display: flex;
+}
+
+.list-benefits .list-item {
+  width: 270px;
+}
+
+.list-benefits .list-item + .list-item {
+  margin-left: 30px;
+}
+
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -196,8 +208,22 @@ border: 1px solid #eeeeee;
   letter-spacing: 0.03em;
 }
 
+/* ABOUT */
+
 .section-about {
   padding: 94px 0;
+}
+
+.list-about {
+  display: flex;
+}
+
+.list-about .list-item + .list-item {
+  margin-left: 30px;
+}
+
+.about-img {
+  display: block;
 }
 
 /* Our Team */
@@ -205,6 +231,24 @@ border: 1px solid #eeeeee;
 .section-team {
   background-color: var(--secondary-bg-color);
   padding: 94px 0;
+}
+
+.list-team {
+  display: flex;
+}
+
+.list-team .list-item + .list-item {
+  margin-left: 30px;
+}
+
+.team-img {
+  display: block;
+}
+
+.list-team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--white-bg-color);
 }
 
 .name {
@@ -276,7 +320,6 @@ border: 1px solid #eeeeee;
   justify-content: center;
   margin-bottom: 50px;
 }
-
 .list-btn .list-item + .list-item {
   margin-left: 8px;
 }
@@ -297,6 +340,20 @@ border: 1px solid #eeeeee;
 .filter-button:focus {
   color: var(--white--text-color);
   background-color: var(--accent-text-color);
+}
+
+.examples-img {
+  display: block;
+}
+
+.examples-link-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .examples.list {
